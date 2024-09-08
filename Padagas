@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic GMO Insights</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        section {
+            width: 100%;
+            padding: 80px 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: white;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        footer p {
+            color: white;
+            opacity: 0.7;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About GMOs</a>
+            <a href="#pros-cons">Pros & Cons</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to GMO Insights</h1>
+        <p>Welcome to GMO Insights, your go-to source for understanding Genetically Modified Organisms (GMOs). Our aim is to provide you with comprehensive information about GMOs, their creation, benefits, and the controversies surrounding them. Whether you're a student, researcher, or just curious about GMOs, you'll find valuable insights here.</p>
+    </section>
+
+    <section id="about">
+        <h1>About GMOs</h1>
+        <p>Genetically Modified Organisms (GMOs) are organisms whose genetic material has been altered through genetic engineering techniques. This process involves manipulating an organism's DNA to enhance specific traits, such as improving resistance to pests, increasing nutritional value, or enabling better growth in adverse conditions. GMOs have been widely adopted in agriculture, leading to significant changes in crop production and food security. Despite their benefits, GMOs remain a topic of debate due to concerns about their long-term impacts on health and the environment.</p>
+    </section>
+
+    <section id="pros-cons">
+        <h1>Pros & Cons of GMOs</h1>
+        <p><strong>Pros:</strong> GMOs have revolutionized agriculture by increasing crop yields and reducing the need for chemical pesticides. They can also be engineered to enhance nutritional content, such as adding vitamins and minerals. Additionally, GMOs can help crops withstand environmental stresses like droughts and pests, leading to more stable food supplies and reduced agricultural losses.</p>
+        <p><strong>Cons:</strong> Despite their advantages, GMOs are associated with several concerns. Environmentalists worry about the potential for GMOs to negatively impact biodiversity and ecosystems. There are also ethical concerns regarding the manipulation of genetic material and the potential for corporate control over seeds and agricultural practices. Moreover, the long-term health effects of consuming GMOs are still under study, leading to ongoing debates about their safety.</p>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2024 GMO Insights | <a href="#">Contact Us</a></p>
+    </footer>
+
+</body>
+
+</html>
